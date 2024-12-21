@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", serif;
+  font-size: 16px;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.card-img {
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  object-fit: cover;
+}
+
+.card {
+  max-width: 400px;
+}
+
+.bg-image {
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card .card-content {
+  background-color: #fff;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  padding: 2rem;
+}
+
+.card .card-tittle {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  font-size: 1.5rem;
+  margin-bottom: 1.1rem;
+}
+
+.card .card-description {
+  display: inline-block;
+  font-size: 1.05rem;
+  line-height: 25px;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+.card .card-price {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.8rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.ap {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.chn {
+  font-weight: 900;
+  color: hsl(245, 75%, 52%);
+  margin-left: 4.7rem;
+}
+
+.price {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+.pricing {
+  margin-left: 1rem;
+}
+
+.card .card-content .music-button {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.card .card-content .pricing {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.card .card-content .chn {
+  vertical-align: middle;
+  display: inline-block;
+  align-self: end;
+}
+
+.btn-s {
+  background-color: hsl(245, 75%, 52%);
+  font-weight: 900;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  width: 100%;
+  border-radius: 0.7rem;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+}
+
+.foot {
+  margin-top: 1.5rem;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+}
+
+@media (min-width: 490px) {
+  .container {
+    min-width: 490px;
+    display: flex;
+    justify-content: center;
+  }
+  .bg-image {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .card {
+    max-width: 450px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
